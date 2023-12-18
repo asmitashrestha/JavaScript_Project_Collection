@@ -11,7 +11,7 @@ h1{
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .container button{
   margin-left: 30px;
@@ -21,4 +21,11 @@ border: none;
 .container button img{
   border-radius: 100%;
   background-color: rgb(186, 218, 245);
+}
+.results{
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(51, 48, 48);
+  font-size: 21px;
 }

@@ -1,7 +1,10 @@
 let score = {
   win: 0,
   lost: 0,
-  tie: 0
+  tie: 0,
+  display:function(){
+    return `win:${score.win}  lost:${score.lost}    tie:${score.tie}`;
+  }
 };
 const computerChoice = () =>{
   let randomNumber = Math.random()*3;
@@ -52,7 +55,8 @@ const resultMsg = (userChoice, computerChoice) =>{
 }
 
 const displayResult = (userChoice,computerChoice, result) =>{
-  alert(`You have choosen ${userChoice}. Computer has choosen ${computerChoice} and  ${result} 
-  
-  win:${score.win}  lost:${score.lost}    tie:${score.tie}`)
+  document.querySelector('.user-choice').innerText = `You have choosen ${userChoice}`;
+  document.querySelector('.computer-choice').innerText = `Computer have choosen ${computerChoice}`;
+  document.querySelector('.result').innerText = result;
+  document.querySelector('.score').innerText = score.display()
 }
