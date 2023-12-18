@@ -1,0 +1,63 @@
+h1{
+  font-size: 33px;
+  color: rgb(43, 42, 42);
+}
+.container{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.inp{
+  position: relative;
+  left: 13px;
+  bottom: 13px;
+}
+.inp input{
+  animation-name: color;
+  animation-duration: 4s;
+  padding: 17px 84px;
+  border-radius: 10px;
+  border: 1px solid rgb(156, 151, 151);
+  box-shadow: 4px 5px rgb(224, 214, 214);
+}
+
+.contain{
+  display: flex;
+ position: relative;
+ left: 511px;
+  margin-bottom: 7px;
+}
+
+.box{
+  margin-left: 10px;
+}
+
+.btn{
+  border-radius: 7px;
+  border: 1px solid rgb(146, 144, 144);
+  width: 77px;
+  padding: 20px 30px;
+  font-size: 22px;
+  animation-name: color;
+  animation-duration: 4s;
+}
+
+@keyframes color {
+  0%   {background-color: rgb(236, 135, 135);}
+  25%  {background-color: rgb(236, 236, 100);}
+  50%  {background-color: rgb(134, 134, 194);}
+  100% {background-color: rgb(184, 235, 184);}
+}
+
+.equal button{
+  padding:17px 80px;
+  position: relative;
+  left: 18px;
+  animation-name: color;
+  animation-duration: 4s;
+  border-radius: 10px;
+  font-size: 27px;
+  
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bat-Ball_Stump</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bat Ball Stump</h1>
+  <div class="container">
+    <button onclick="
+      let compChoice = computerChoice();
+      let msg = resultMsg('Bat', compChoice);
+      let res = displayResult('Bat',compChoice ,msg);
+    "> <img src="bat.jpg" alt="bat"> </button>
+
+    <button  onclick="
+     compChoice = computerChoice();
+     msg = resultMsg('Ball', compChoice);
+      res = displayResult('Ball',compChoice ,msg);
+    "> <img src="ball.jpg" alt="ball"> </button>
+    
+    <button  onclick="
+      compChoice = computerChoice();
+      msg = resultMsg('stump', compChoice);
+      res = displayResult('Stump',compChoice, msg);
+    ">
+      <img src="stump.jpg" alt="stump">
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
