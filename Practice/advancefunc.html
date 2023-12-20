@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="btn">Click Me</button>
+
+  <script>
+    // let sum = function(n1,n2,n3){
+    //   return n1+n2+n3;
+    // }
+
+    // console.log(`The sum of number is ${sum(1,2,3)}`);
+// setTimeout run or execute only one time but setInterval runs repeatedly
+
+    // let clxtime = function(){
+    //   console.log('wake up');
+    // }
+    // setTimeout(clxtime,3000);
+    // setInterval(clxtime,2000)
+ const button = document.querySelector('.btn')
+
+ button.addEventListener('click',()=>{
+  console.log("You clicked me");
+ })
+
+ button.addEventListener('click',()=>{
+  console.log('I also clicked you');
+ })
+
+ let fruits = ['apple','banana','mango']
+
+ fruits.forEach((food)=>{
+  console.log(food);
+ })
+
+
+  </script>
+</body>
+</html>

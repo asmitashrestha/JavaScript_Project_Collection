@@ -1,12 +1,9 @@
 let todoList = [
   {
-    item: 'Make Calculator',
-    dueDate: '18/12/2023'
+    item: 'Make Todo',
+    dueDate: '19/12/2023'
   },
-  {
-    item: 'Make ball bat stump',
-    dueDate: '18/12/2023'
-  }
+ 
 ];
 
 displayItems();
@@ -26,12 +23,14 @@ function displayItems() {
   let containerElement = document.querySelector('.todo-container');
   let newHtml = '';
   for (let i = 0; i < todoList.length; i++) {
-    let {item, dueDate} = todoList[i];
+    let {item, dueDate} = todoList[i]; //Object destructing instead of this we can write it separately
     newHtml += `
-      <span>${item}</span>
+    <span>${item}</span>
       <span>${dueDate}</span>
       <button class='btn-delete' onclick="todoList.splice(${i}, 1);
       displayItems();">Delete</button>
+    
+      
     `;
   }
   containerElement.innerHTML = newHtml;
